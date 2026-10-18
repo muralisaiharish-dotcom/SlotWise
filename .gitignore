@@ -1,0 +1,25 @@
+# SlotWise - Build artifacts
+target/
+
+# IDE files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled classes
+*.class
+
+# Credentials - NEVER commit
+src/main/resources/application.properties
+
+# Logs
+*.log

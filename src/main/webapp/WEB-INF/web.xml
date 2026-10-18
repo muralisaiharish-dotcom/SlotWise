@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>SlotWise</display-name>
+    <description>Smart Academic Free-Time Utilization and Task Planning System</description>
+
+    <!-- ====================================================== -->
+    <!-- Welcome File                                           -->
+    <!-- ====================================================== -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- ====================================================== -->
+    <!-- Authentication Servlets                                -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Dashboard Servlet                                      -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Task Servlets (CRUD)                                   -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>TaskServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.TaskServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TaskServlet</servlet-name>
+        <url-pattern>/tasks</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Timetable Servlets (CRUD)                              -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>TimetableServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.TimetableServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TimetableServlet</servlet-name>
+        <url-pattern>/timetable</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Smart Planner Servlet                                  -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>PlannerServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.PlannerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PlannerServlet</servlet-name>
+        <url-pattern>/planner</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Progress Servlet                                       -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>ProgressServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.ProgressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProgressServlet</servlet-name>
+        <url-pattern>/progress</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Settings Servlet                                       -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>SettingsServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.SettingsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SettingsServlet</servlet-name>
+        <url-pattern>/settings</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Session Configuration                                  -->
+    <!-- ====================================================== -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+    <!-- ====================================================== -->
+    <!-- Error Pages                                            -->
+    <!-- ====================================================== -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error.jsp</location>
+    </error-page>
+</web-app>
