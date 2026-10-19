@@ -35,6 +35,12 @@ public class TimetableServlet extends HttpServlet {
         int studentId = (int) session.getAttribute("studentId");
         String action = request.getParameter("action");
         String dayFilter = request.getParameter("day");
+        String view = request.getParameter("view");
+
+        if ("today".equalsIgnoreCase(view) || "today-timetable".equalsIgnoreCase(view)) {
+            request.getRequestDispatcher("/today-timetable.jsp").forward(request, response);
+            return;
+        }
 
         try {
             if ("add".equals(action)) {

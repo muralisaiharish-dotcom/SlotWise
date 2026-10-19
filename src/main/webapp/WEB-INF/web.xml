@@ -106,6 +106,18 @@
     </servlet-mapping>
 
     <!-- ====================================================== -->
+    <!-- Recent Activity Page                                   -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>RecentActivityJsp</servlet-name>
+        <jsp-file>/recent-activity.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecentActivityJsp</servlet-name>
+        <url-pattern>/recent-activity</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
     <!-- Settings Servlet                                       -->
     <!-- ====================================================== -->
     <servlet>
@@ -115,6 +127,30 @@
     <servlet-mapping>
         <servlet-name>SettingsServlet</servlet-name>
         <url-pattern>/settings</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Today's Timetable JSP Mapping                          -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>TodayTimetableJSP</servlet-name>
+        <jsp-file>/today-timetable.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TodayTimetableJSP</servlet-name>
+        <url-pattern>/today-timetable</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Upcoming Tasks JSP Mapping                             -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>UpcomingTasksJSP</servlet-name>
+        <jsp-file>/upcoming-tasks.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpcomingTasksJSP</servlet-name>
+        <url-pattern>/upcoming-tasks</url-pattern>
     </servlet-mapping>
 
     <!-- ====================================================== -->
