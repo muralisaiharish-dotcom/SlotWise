@@ -1969,14 +1969,14 @@
                     <span>My Tasks</span>
                 </a>
 
-                <a href="${pageContext.request.contextPath}/planner" class="pw-nav-item">
+                <a href="${pageContext.request.contextPath}/study-planner" class="pw-nav-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                        <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                        <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                        <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        <path d="M2 12h20"></path>
                     </svg>
-                    <span>Smart Planner</span>
+                    <span>Study Planner</span>
                 </a>
 
                 <a href="${pageContext.request.contextPath}/progress" class="pw-nav-item active">
@@ -1988,7 +1988,7 @@
                     <span>Progress</span>
                 </a>
 
-                <a href="#" class="pw-nav-item">
+                <a href="${pageContext.request.contextPath}/materials" class="pw-nav-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
@@ -1996,7 +1996,7 @@
                     <span>Materials</span>
                 </a>
 
-                <a href="#" class="pw-nav-item">
+                <a href="${pageContext.request.contextPath}/study-groups.jsp" class="pw-nav-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                         <circle cx="9" cy="7" r="4"></circle>
@@ -2007,7 +2007,7 @@
                 </a>
 
                 <!-- Smart Rescheduler -->
-                <a href="${pageContext.request.contextPath}/smart-rescheduler.jsp" class="pw-nav-item">
+                <a href="${pageContext.request.contextPath}/rescheduler" class="pw-nav-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21.5 2v6h-6"></path>
                         <path d="M2.5 12A10 10 0 0 1 20.5 6.3L21.5 8"></path>
@@ -2018,7 +2018,7 @@
                 </a>
 
                 <!-- Deadline Radar -->
-                <a href="${pageContext.request.contextPath}/deadline-radar.jsp" class="pw-nav-item">
+                <a href="${pageContext.request.contextPath}/deadlines" class="pw-nav-item">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="2"></circle>
                         <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>

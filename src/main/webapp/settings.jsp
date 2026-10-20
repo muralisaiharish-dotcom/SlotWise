@@ -839,7 +839,7 @@
                         </div>
 
                         <p style="font-size: 0.85rem; color: var(--text-muted);">
-                            Account created on: <strong style="color: var(--text-secondary);"><fmt:formatDate value="${student.createdAt}" pattern="MMMM dd, yyyy &bull; HH:mm:ss" /></strong>. 
+                            Account created on: <strong style="color: var(--text-secondary);"><fmt:formatDate value="${student.createdAt}" pattern="MMMM dd, yyyy" /> &bull; <fmt:formatDate value="${student.createdAt}" pattern="HH:mm:ss" /></strong>. 
                             Your personal academic data is never shared with third parties or external analytics providers.
                         </p>
                     </div>

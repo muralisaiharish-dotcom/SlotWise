@@ -154,6 +154,75 @@
     </servlet-mapping>
 
     <!-- ====================================================== -->
+    <!-- Study Materials JSP Mapping                            -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>MaterialsJSP</servlet-name>
+        <jsp-file>/materials.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MaterialsJSP</servlet-name>
+        <url-pattern>/materials</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Smart Rescheduler Servlet                              -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>ReschedulerServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.ReschedulerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReschedulerServlet</servlet-name>
+        <url-pattern>/rescheduler</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Deadline Radar Servlet                                 -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>DeadlineRadarServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.DeadlineRadarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeadlineRadarServlet</servlet-name>
+        <url-pattern>/deadlines</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeadlineRadarServlet</servlet-name>
+        <url-pattern>/deadline-radar</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Study Planner Servlet                                  -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>StudyPlannerServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.StudyPlannerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudyPlannerServlet</servlet-name>
+        <url-pattern>/study-planner</url-pattern>
+    </servlet-mapping>
+
+    <!-- ====================================================== -->
+    <!-- Study Groups Servlet                                   -->
+    <!-- ====================================================== -->
+    <servlet>
+        <servlet-name>StudyGroupsServlet</servlet-name>
+        <servlet-class>com.slotwise.servlet.StudyGroupsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudyGroupsServlet</servlet-name>
+        <url-pattern>/study-groups</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudyGroupsServlet</servlet-name>
+        <url-pattern>/studygroups</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ====================================================== -->
     <!-- Session Configuration                                  -->
     <!-- ====================================================== -->
     <session-config>
